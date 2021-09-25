@@ -4,13 +4,13 @@ const { QueryType } = require('discord-player');
 module.exports = class extends SlashCommand {
     constructor(creator) {
         super(creator, {
-            name: 'play',
-            description: 'Play a song from youtube',
+            name: 'pusti',
+            description: 'Pusti pesmu sa jutjuba',
             options: [
                 {
                     name: 'query',
                     type: CommandOptionType.STRING,
-                    description: 'The song you want to play',
+                    description: 'Link pesme druze, sta bi drugo bilo',
                     required: true
                 }
             ],
@@ -36,7 +36,7 @@ module.exports = class extends SlashCommand {
             .catch(() => {
                 console.log('he');
             });
-        if (!searchResult || !searchResult.tracks.length) return void ctx.sendFollowUp({ content: 'No results were found!' });
+        if (!searchResult || !searchResult.tracks.length) return void ctx.sendFollowUp({ content: 'Sta je ovo koji kurac?! To ni milicija ne moze naci!' });
 
         const queue = await client.player.createQueue(guild, {
             metadata: channel
@@ -47,10 +47,10 @@ module.exports = class extends SlashCommand {
             if (!queue.connection) await queue.connect(member.voice.channel);
         } catch {
             void client.player.deleteQueue(ctx.guildID);
-            return void ctx.sendFollowUp({ content: 'Could not join your voice channel!' });
+            return void ctx.sendFollowUp({ content: 'Nisam mogo uc jebote ker u picku!' });
         }
 
-        await ctx.sendFollowUp({ content: `⏱ | Loading your ${searchResult.playlist ? 'playlist' : 'track'}...` });
+        await ctx.sendFollowUp({ content: `⏱ | Ocitavam ${searchResult.playlist ? 'playlist' : 'track'}...` });
         searchResult.playlist ? queue.addTracks(searchResult.tracks) : queue.addTrack(searchResult.tracks[0]);
         if (!queue.playing) await queue.play();
     }

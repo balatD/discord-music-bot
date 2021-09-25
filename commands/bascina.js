@@ -3,8 +3,8 @@ const { SlashCommand } = require('slash-create');
 module.exports = class extends SlashCommand {
     constructor(creator) {
         super(creator, {
-            name: 'bassboost',
-            description: 'Toggle bassboost filter',
+            name: 'bascina',
+            description: 'Ukljuci bascinu',
 
             guildIDs: process.env.DISCORD_GUILD_ID ? [ process.env.DISCORD_GUILD_ID ] : undefined
         });
@@ -17,14 +17,14 @@ module.exports = class extends SlashCommand {
         await ctx.defer();
 
         const queue = client.player.getQueue(ctx.guildID);
-        if (!queue || !queue.playing) return void ctx.sendFollowUp({ content: '❌ | No music is being played!' });
+        if (!queue || !queue.playing) return void ctx.sendFollowUp({ content: '❌ | Ne svira nista jarane!' });
         await queue.setFilters({
-            bassboost: !queue.getFiltersEnabled().includes('bassboost'),
-            normalizer2: !queue.getFiltersEnabled().includes('bassboost') // because we need to toggle it with bass
+            bassboost: !queue.getFiltersEnabled().includes('bascina'),
+            normalizer2: !queue.getFiltersEnabled().includes('bascina')
         });
 
         setTimeout(() => {
-            return void ctx.sendFollowUp({ content: `🎵 | Bassboost ${queue.getFiltersEnabled().includes('bassboost') ? 'Enabled' : 'Disabled'}!` });
+            return void ctx.sendFollowUp({ content: `🎵 | Bascina pojacana ${queue.getFiltersEnabled().includes('bascina') ? 'Enabled' : 'Disabled'}!` });
         }, queue.options.bufferingTimeout);
     }
 };

@@ -3,8 +3,8 @@ const { SlashCommand } = require('slash-create');
 module.exports = class extends SlashCommand {
     constructor(creator) {
         super(creator, {
-            name: 'resume',
-            description: 'Resume the current song',
+            name: 'pauzak',
+            description: 'Snek pa pauzak',
 
             guildIDs: process.env.DISCORD_GUILD_ID ? [ process.env.DISCORD_GUILD_ID ] : undefined
         });
@@ -18,7 +18,7 @@ module.exports = class extends SlashCommand {
 
         const queue = client.player.getQueue(ctx.guildID);
         if (!queue || !queue.playing) return void ctx.sendFollowUp({ content: '❌ | Ne svira nista jarane!' });
-        const paused = queue.setPaused(false);
-        return void ctx.sendFollowUp({ content: paused ? '▶ | Resumed!' : '❌ | Something went wrong!' });
+        const paused = queue.setPaused(true);
+        return void ctx.sendFollowUp({ content: paused ? '⏸ | Pauzak!' : '❌ | Nesto se pojebalo!' });
     }
 };

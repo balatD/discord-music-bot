@@ -24,7 +24,7 @@ module.exports = class extends SlashCommand {
         
         await ctx.defer();
         const queue = client.player.getQueue(ctx.guildID);
-        if (!queue || !queue.playing) return void ctx.sendFollowUp({ content: '❌ | No music is being played!' });
+        if (!queue || !queue.playing) return void ctx.sendFollowUp({ content: '❌ | Ne svira nista jarane!' });
         const vol = parseInt(ctx.options.amount);
         if (!vol) return void ctx.sendFollowUp({ content: `🎧 | Current volume is **${queue.volume}**%!` });
         if (vol < 0 || vol > 100) return void ctx.sendFollowUp({ content: '❌ | Volume range must be 0-100' });

@@ -3,9 +3,9 @@ const { SlashCommand } = require('slash-create');
 module.exports = class extends SlashCommand {
     constructor(creator) {
         super(creator, {
-            name: 'back',
-            description: 'Play the previous track',
-
+            name: 'ocisti',
+            description: 'Ocisti queue bogati',
+            
             guildIDs: process.env.DISCORD_GUILD_ID ? [ process.env.DISCORD_GUILD_ID ] : undefined
         });
     }
@@ -17,10 +17,10 @@ module.exports = class extends SlashCommand {
         await ctx.defer();
 
         const queue = client.player.getQueue(ctx.guildID);
-        if (!queue || !queue.playing) return void ctx.sendFollowUp({ content: '❌ | No music is being played!' });
+        if (!queue) return void ctx.sendFollowUp({ content: '❌ | Nema muzike u queue, jesi debil a?!' });
         
-        await queue.back();
+        queue.clear();
 
-        ctx.sendFollowUp({ content: '✅ | Playing the previous track!' });
+        ctx.sendFollowUp({ content: '❌ | Queue ociscen.' });
     }
 };

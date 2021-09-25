@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f81d64df-dec4-4238-9ddd-b0550c2149a9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/back.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/prosla.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/bassboost.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/bascina.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/clear.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/ocisti.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/history.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/history.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/jump.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/jump.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/loop.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/loop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/np.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/np.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/pause.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/pauzak.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/play.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/pusti.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/playnext.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/playnext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/queue.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/queue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/remove.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/remove.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/resume.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/seek.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/seek.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/shuffle.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/shuffle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/skip.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/skipuj.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/stop.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/stani.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/volume.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/volume.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1yeMobihCy1lfQVHy5fe4mAsaJi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f81d64df-dec4-4238-9ddd-b0550c2149a9" name="Changes" comment="" />
+      <created>1632607787009</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632607787009</updated>
+      <workItem from="1632607788545" duration="4079000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
